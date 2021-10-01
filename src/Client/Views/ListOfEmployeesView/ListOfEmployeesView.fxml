@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Views.ListOfEmployeesView.ListOfEmployeesViewController">
+   <children>
+      <Button layoutX="462.0" layoutY="346.0" mnemonicParsing="false" onAction="#onMenuButton" style="-fx-background-color: FFD3B7;" text="Back to MENU" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="25.0" layoutY="31.0" text="All Employees" textFill="#e28243" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="365.0" layoutY="343.0" mnemonicParsing="false" onAction="#onAddCustomerButton" style="-fx-background-color: F4AF82 F4AF82;" text="Create Employee" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="140.0" />
+      <ListView fx:id="listView" layoutX="25.0" layoutY="64.0" prefHeight="274.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="65.0" />
+   </children>
+</AnchorPane>

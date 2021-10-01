@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Views.AddVehicleView.AddVehicleViewController">
+   <children>
+      <Button layoutX="462.0" layoutY="346.0" mnemonicParsing="false" onAction="#onExitButton" style="-fx-background-color: FFD3B7;" text="Exit" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="25.0" layoutY="31.0" text="Add new vehicle" textFill="#e28243" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="72.0" text="Type:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="24.0" layoutY="109.0" text="Make:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="110.0" />
+      <TextField fx:id="makeField" layoutX="62.0" layoutY="104.0" prefHeight="27.0" prefWidth="180.0" promptText="Enter make (Audi, BMW, ...) " style="-fx-background-color: E5E5E5;" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="105.0" />
+      <Label layoutX="22.0" layoutY="146.0" text="Model:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="150.0" />
+      <TextField fx:id="modelField" layoutX="62.0" layoutY="141.0" prefHeight="27.0" prefWidth="180.0" promptText="Enter model of vehicle " style="-fx-background-color: E5E5E5;" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="145.0" />
+      <Label layoutX="22.0" layoutY="183.0" text="Year:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="190.0" />
+      <TextField fx:id="yearField" layoutX="62.0" layoutY="178.0" prefHeight="27.0" prefWidth="100.0" promptText="Vehicle's year" style="-fx-background-color: E5E5E5;" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="185.0" />
+      <Label layoutX="275.0" layoutY="72.0" text="Select gearbox:" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="70.0" />
+      <RadioButton fx:id="automaticGearBoxButton" layoutX="370.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#selectAutomatic" text="automatic" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="65.0" />
+      <RadioButton fx:id="manualGearBoxButton" layoutX="462.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#selectManual" text="manual" AnchorPane.leftAnchor="470.0" AnchorPane.topAnchor="65.0" />
+      <Label layoutX="275.0" layoutY="109.0" text="Select type of fuel:" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="110.0" />
+      <RadioButton fx:id="petrolTypeButton" layoutX="286.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#selectPetrol" text="petrol" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="130.0" />
+      <RadioButton fx:id="dieselTypeButton" layoutX="286.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#selectDiesel" text="diesel" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="160.0" />
+      <RadioButton fx:id="hybridTypeButton" layoutX="390.0" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#selectHybrid" text="hybrid" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="130.0" />
+      <RadioButton fx:id="electricTypeButton" layoutX="390.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#selectElectric" text="electric" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="160.0" />
+      <Label layoutX="21.0" layoutY="236.0" text="Number of seats:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="235.0" />
+      <TextField fx:id="nbOfSeatsField" layoutX="135.0" layoutY="231.0" prefHeight="27.0" prefWidth="55.0" promptText="0" style="-fx-background-color: E5E5E5;" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="230.0" />
+      <Label layoutX="21.0" layoutY="266.0" text="Price per day (dkk):" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="270.0" />
+      <TextField fx:id="priceField" layoutX="135.0" layoutY="261.0" prefHeight="27.0" prefWidth="55.0" promptText="0" style="-fx-background-color: E5E5E5;" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="265.0" />
+      <Label layoutX="224.0" layoutY="235.0" text="License plate:" />
+      <Label layoutX="224.0" layoutY="270.0" text="Engine power(kW):)" />
+      <TextField fx:id="licensePlateField" layoutX="348.0" layoutY="230.0" prefHeight="27.0" prefWidth="109.0" promptText="AA 00 000" style="-fx-background-color: E5E5E5;" />
+      <TextField fx:id="enginePowerField" layoutX="348.0" layoutY="265.0" prefHeight="27.0" prefWidth="109.0" promptText="0" style="-fx-background-color: E5E5E5;" />
+      <Button layoutX="416.0" layoutY="343.0" mnemonicParsing="false" onAction="#onAddButton" style="-fx-background-color: F4AF82;" text="Add new vehicle" />
+      <ComboBox fx:id="types" layoutX="67.0" layoutY="343.0" prefHeight="27.0" prefWidth="180.0" promptText="Select type" style="-fx-background-color: FFFFFF; -fx-border-color: F4AF82; -fx-border-radius: 3;" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="65.0" />
+   </children>
+</AnchorPane>

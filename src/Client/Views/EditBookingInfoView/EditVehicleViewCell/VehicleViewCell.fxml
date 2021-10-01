@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="120" maxWidth="265" minHeight="120" minWidth="265" prefHeight="120.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="makeLabel" layoutX="12.0" layoutY="10.0" prefHeight="22.0" prefWidth="103.0" text="Audi" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="modelLabel" alignment="CENTER_RIGHT" layoutX="141.0" layoutY="10.0" prefHeight="22.0" prefWidth="135.0" text="A1 Hatchback" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="yearLabel" layoutX="13.0" layoutY="30.0" prefHeight="17.0" prefWidth="80.0" text="2011" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="35.0" />
+      <Label fx:id="gearboxTypeLabel" layoutX="8.0" layoutY="54.0" prefHeight="17.0" prefWidth="80.0" text="Manual" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="55.0" />
+      <Label layoutX="122.0" layoutY="55.0" prefHeight="17.0" prefWidth="60.0" text="Seats:" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="55.0" />
+      <Label fx:id="nbOfSeatsLabel" alignment="CENTER_RIGHT" layoutX="172.0" layoutY="55.0" prefHeight="17.0" prefWidth="60.0" text="4" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="55.0" />
+      <Label layoutX="124.0" layoutY="75.0" prefHeight="17.0" prefWidth="60.0" text="Fuel:" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="90.0" />
+      <Label fx:id="fuelTypeLabel" alignment="CENTER_RIGHT" layoutX="183.0" layoutY="78.0" prefHeight="17.0" prefWidth="60.0" text="Diesel" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="licensePlateLabel" alignment="CENTER_RIGHT" layoutX="171.0" layoutY="35.0" prefHeight="17.0" prefWidth="60.0" text="BA40 136" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0" />
+      <Label layoutX="122.0" layoutY="35.0" prefHeight="17.0" prefWidth="60.0" text="Lic. plate:" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="35.0" />
+      <Label fx:id="enginesPowerLabel" layoutX="11.0" layoutY="74.0" prefHeight="17.0" prefWidth="80.0" text="105 HP" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" />
+      <Line endX="105.0" layoutX="160.0" layoutY="95.0" startX="-160.0" AnchorPane.bottomAnchor="0.0" />
+      <Button layoutX="200.0" layoutY="10.0" mnemonicParsing="false" onAction="#onChooseButton" style="-fx-background-color: FFD3B7 FFD3B7;" text="CHOOSE THIS VEHICLE" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="8.0" layoutY="91.0" prefHeight="17.0" prefWidth="80.0" text="Price per day:" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+      <Label fx:id="priceLabel" layoutX="88.0" layoutY="94.0" prefHeight="17.0" prefWidth="41.0" text="100" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="90.0" />
+   </children>
+</AnchorPane>
